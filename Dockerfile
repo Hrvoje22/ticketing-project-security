@@ -1,5 +1,4 @@
-FROM amd64/maven:3.8.6-openjdk-11
+FROM amd64/maven:3.8.6-openjdk-18-slim
 WORKDIR usr/app
-COPY  .  .
+COPY  ../../Desktop/untitled%20folder  .
 ENTRYPOINT ["mvn","spring-boot:run"]
-
